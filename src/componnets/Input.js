@@ -1,5 +1,6 @@
 import React, { Component } from 'react'
 import { Button, Label } from 'semantic-ui-react'
+
 class Input extends Component {
     state={
         products:""
@@ -13,6 +14,7 @@ class Input extends Component {
     FormSubmit = (e) => {
         e.preventDefault();
         this.props.onChangeSubmit(this.state.products);
+    
         
     }
 
